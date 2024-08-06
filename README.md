@@ -50,4 +50,12 @@ cd my-new-remix-app
 rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
+
 ```
+
+
+### Prisma commands
+
+npx prisma init --datasource-provider mongodb
+npx prisma generate
+
