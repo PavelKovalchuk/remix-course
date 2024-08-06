@@ -1,4 +1,5 @@
 // /expenses => shared layout
+import { json } from '@remix-run/node';
 import { Link, Outlet, useLoaderData } from '@remix-run/react';
 import { FaPlus, FaDownload } from 'react-icons/fa';
 
@@ -30,4 +31,9 @@ export default function ExpensesLayout() {
 
 export function loader() {
   return getExpenses();
+}
+
+export async function loaderWithJson() {
+  const expenses = await getExpenses();
+  return json(expenses);
 }
