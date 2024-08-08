@@ -58,4 +58,5 @@ cp -R ../my-old-remix-app/app app
 
 npx prisma init --datasource-provider mongodb
 npx prisma generate
+npx prisma db push
 
